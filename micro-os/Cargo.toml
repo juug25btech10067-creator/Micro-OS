@@ -1,0 +1,17 @@
+[package]
+name = "micro_os"
+version = "0.1.0"
+edition = "2021"
+authors = ["Micro-OS Engineering Team"]
+description = "CA-6 Educational Rust Micro-OS with Track C Concurrency Engineering"
+
+[dependencies]
+# Zero external mandatory dependencies for guaranteed offline portability and pure systems reasoning
+
+[[bin]]
+name = "micro_os"
+path = "src/main.rs"
+
+[lib]
+name = "micro_os_kernel"
+path = "src/lib.rs"
